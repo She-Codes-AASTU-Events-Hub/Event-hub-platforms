@@ -1,1 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AASTU Events Hub - Basics Track</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="logo">
+            <h2>AASTU Hub</h2>
+            <span>Basics Frontend</span>
+        </div>
+        <ul class="nav-links">
+            <li class="active" data-target="dashboard-hub">🏠 System Dashboard</li>
+            <li data-target="bootcamp-site">💻 She Codes Bootcamp</li>
+            <li data-target="hackathon-site">🚀 Grand Hackathon '26</li>
+            <li data-target="career-site">👔 Tech Career Panel</li>
+            <li data-target="exhibition-site">🎨 Innovate Exhibition</li>
+        </ul>
+        <div class="sidebar-footer">She Codes Project</div>
+    </nav>
+
+    <main class="content-canvas">
+
+        <section id="dashboard-hub" class="microsite-view active-view">
+            <header class="view-header">
+                <h1>Campus Events Ecosystem</h1>
+                <p>Welcome to the central gateway of AASTU's premier tech and design events tracking terminal.</p>
+            </header>
+            
+            <div class="stats-grid">
+                <div class="stat-card"><h3>4 Active</h3><p>Live Microsites</p></div>
+                <div class="stat-card"><h3>100%</h3><p>Responsive Layouts</p></div>
+                <div class="stat-card"><h3>Live</h3><p>Data Handlers</p></div>
+            </div>
+
+            <h2>Explore Event Gateways</h2>
+            <div class="gateway-grid">
+                <div class="gateway-card" onclick="switchView('bootcamp-site')">
+                    <h3>She Codes Bootcamp</h3>
+                    <p>Intensive tech upskilling track focusing on female engineering paths inside AASTU.</p>
+                    <span class="badge">Active Track</span>
+                </div>
+                <div class="gateway-card" onclick="switchView('hackathon-site')">
+                    <h3>Grand Hackathon</h3>
+                    <p>The ultimate 48-hour building sprint for prototype construction and local deployment.</p>
+                    <span class="badge urgent">Counting Down</span>
+                </div>
+                <div class="gateway-card" onclick="switchView('career-site')">
+                    <h3>Tech Career Panel</h3>
+                    <p>Networking gateway connecting regional software leads with graduating developers.</p>
+                    <span class="badge new">New Release</span>
+                </div>
+                <div class="gateway-card" onclick="switchView('exhibition-site')">
+                    <h3>Innovate Exhibition</h3>
+                    <p>An interactive, multi-category showcase displaying project architectures from local teams.</p>
+                    <span class="badge new">New Release</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="bootcamp-site" class="microsite-view">
+            <div class="hero banner-bootcamp">
+                <h1>She Codes Bootcamp Portal</h1>
+                <p>Empowering the next generation of female software architects at AASTU.</p>
+            </div>
+            <div class="view-body">
+                <div class="layout-split">
+                    <div class="main-pane">
+                        <h2>Training Track Overview</h2>
+                        <p>This track provides core engineering methodologies, clean-code workflows, and cross-functional team collaborations designed to transition foundational theories into production code bases.</p>
+                        
+                        <h3>Curriculum Modules</h3>
+                        <div class="timeline">
+                            <div class="time-node"><strong>Week 1-2:</strong> UI Architecture & Advanced Layout Engines</div>
+                            <div class="time-node"><strong>Week 3-4:</strong> Client-Side Application State & DOM Manipulation</div>
+                            <div class="time-node"><strong>Week 5:</strong> RESTful API Engineering & Component Lifecycles</div>
+                        </div>
+                    </div>
+                    <div class="side-pane">
+                        <div class="sticky-form">
+                            <h3>Enroll in Bootcamp</h3>
+                            <form class="event-form" data-event-id="1">
+                                <label>Full Name</label>
+                                <input type="text" required placeholder="Lakin ...">
+                                <label>University Email</label>
+                                <input type="email" required placeholder="student@aastu.edu.et">
+                                <button type="submit">Submit Registration</button>
+                            </form>
+                            <div class="form-feedback"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hackathon-site" class="microsite-view">
+            <div class="hero banner-hackathon">
+                <h1>AASTU Grand Hackathon 2026</h1>
+                <p>48 Hours. Infinite Dev Configurations. Build the Future.</p>
+                <div class="countdown-clock" id="hackathon-clock">00d 00h 00m 00s</div>
+            </div>
+            <div class="view-body">
+                <div class="layout-split">
+                    <div class="main-pane">
+                        <h2>Hackathon Directives</h2>
+                        <p>Teams across departments unite to design, test, and pitch real-world solutions. High-speed networking infrastructure and mentor consultation rooms are open continuously.</p>
+                        
+                        <div class="prize-pool">
+                            <h3>🏆 Prize Pool Distribution</h3>
+                            <ul>
+                                <li><strong>1st Place:</strong> Major Financial Grant + Incubation Access</li>
+                                <li><strong>2nd Place:</strong> Dedicated Hardware Toolkits</li>
+                                <li><strong>3rd Place:</strong> Tech Cloud Infrastructural Credits</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="side-pane">
+                        <div class="sticky-form">
+                            <h3>Register Hackathon Team</h3>
+                            <form class="event-form" data-event-id="2">
+                                <label>Team Leader Name</label>
+                                <input type="text" required>
+                                <label>Contact Email</label>
+                                <input type="email" required>
+                                <label>Preferred Core Track</label>
+                                <select required>
+                                    <option value="React Frontend">React Frontend</option>
+                                    <option value="Node.js Backend">Node.js Backend</option>
+                                    <option value="Full-Stack System">Full-Stack System</option>
+                                </select>
+                                <button type="submit">Secure Hacking Slot</button>
+                            </form>
+                            <div class="form-feedback"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="career-site" class="microsite-view">
+            <div class="hero banner-career">
+                <h1>Tech Career Panel & Networking</h1>
+                <p>Bridge the gap between academic theory and active software industry deployment.</p>
+            </div>
+            <div class="view-body">
+                <h2>Featured Keynote Panelists</h2>
+                <div class="speaker-grid">
+                    <div class="speaker-card">
+                        <div class="speaker-avatar">🧑‍💻</div>
+                        <h4>Dr. Eleni Tesfaye</h4>
+                        <p>Director of Systems Engineering</p>
+                        <span class="speaker-tag">AI Infrastructure</span>
+                    </div>
+                    <div class="speaker-card">
+                        <div class="speaker-avatar">👩‍💻</div>
+                        <h4>Alemayehu Kassa</h4>
+                        <p>Principal Software Architect</p>
+                        <span class="speaker-tag">Distributed Databases</span>
+                    </div>
+                    <div class="speaker-card">
+                        <div class="speaker-avatar">🚀</div>
+                        <h4>Samrawit Amare</h4>
+                        <p>Lead UX Product strategist</p>
+                        <span class="speaker-tag">Interface Systems</span>
+                    </div>
+                </div>
+
+                <div class="layout-split" style="margin-top: 2rem;">
+                    <div class="main-pane">
+                        <h3>Agenda Breakdowns</h3>
+                        <p>Participate in deep-dive discussions tracking tech migrations, modern container systems, and strategic code structures for massive modern scaling.</p>
+                    </div>
+                    <div class="side-pane">
+                        <div class="sticky-form">
+                            <h3>Reserve Seating Pass</h3>
+                            <form class="event-form" data-event-id="3">
+                                <label>Attendee Name</label>
+                                <input type="text" required>
+                                <label>Email Profile</label>
+                                <input type="email" required>
+                                <button type="submit">Generate E-Ticket</button>
+                            </form>
+                            <div class="form-feedback"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="exhibition-site" class="microsite-view">
+            <div class="hero banner-exhibition">
+                <h1>Innovate-AASTU Project Exhibition</h1>
+                <p>Interactive engineering showcase documenting local software prototypes built by students.</p>
+            </div>
+            <div class="view-body">
+                <h2>Project Domain Showcases</h2>
+                
+                <div class="tab-row">
+                    <button class="tab-btn active-tab" data-filter="all">All Fields</button>
+                    <button class="tab-btn" data-filter="iot">IoT & Hardware</button>
+                    <button class="tab-btn" data-filter="web">Web Architectures</button>
+                </div>
+
+                <div class="project-gallery">
+                    <div class="gallery-item" data-category="iot">
+                        <h4>Smart Campus Grid</h4>
+                        <p>Automated power monitoring and routing system running real-time load analytics.</p>
+                        <span class="category-lbl">IoT System</span>
+                    </div>
+                    <div class="gallery-item" data-category="web">
+                        <h4>AASTU Resource API Portal</h4>
+                        <p>High-efficiency request handling module supplying departmental information nodes.</p>
+                        <span class="category-lbl">Web Infra</span>
+                    </div>
+                    <div class="gallery-item" data-category="iot">
+                        <h4>Automated Attendance Module</h4>
+                        <p>Secure hardware peripheral scanning student profiles using encrypted tokens.</p>
+                        <span class="category-lbl">IoT System</span>
+                    </div>
+                    <div class="gallery-item" data-category="web">
+                        <h4>She Codes Event Terminal</h4>
+                        <p>A unified user portal running multi-track connections via local APIs.</p>
+                        <span class="category-lbl">Web Infra</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
 
